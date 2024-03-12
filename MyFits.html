@@ -50,8 +50,8 @@
 
         .sweater {
             position: absolute;
-            top: 32px; /* Adjusted top position */
-            left: -5px;
+            top: 39px; /* Adjusted top position */
+            left: 0px;
             width: 200px; /* Adjusted width for the sweater */
             z-index: 3; /* Adjusted to be below everything else */
         }
@@ -148,6 +148,44 @@
             top: 207px; /* Adjusted top position */
 
 }
+.smaller-tank{
+            width: 100%;
+            position: absolute;
+            top: 18px;
+}
+.smaller-nav{
+            position: absolute;
+            top: 0px; /* Adjusted top position */
+            left: -15px;
+            width: 110%;
+}
+.smaller-gg{
+            width: 120%;
+            position: absolute;
+            left: -22px;
+            top: -10px;
+}
+
+.smaller-co{
+            position: absolute;
+            top: -7px; /* Adjusted top position */
+            left: -9px;
+            width: 110%;
+}
+
+.smaller-crop{
+            width: 115%;
+            position: absolute;
+            left: -11px;
+            top: 15px;
+}
+
+.smaller-grey{
+            width: 100%;
+            position: absolute;
+            left: -5px;
+            top: 25px;
+}
 
 
 button {
@@ -195,8 +233,8 @@ button:hover {
     // Array of image filenames for each clothing item
    var hats = ["head.png", "nothing.png"]; // Add your hat image filenames here
    var faces = ["un.png", "deux.png", "trois.png"];
-   var sweaters = ["nothing.png", "turtleuni.png","redd.png"];
-   var tshirts = ["TRANSP.png","tanktop.png", "Blackt-removebg-preview.png"];
+   var sweaters = ["cozyblack-Photoroom.png-Photoroom.png","turleblue-Photoroom.png-Photoroom.png", "nothing.png", "turtleuni.png","redd.png"];
+   var tshirts = ["greenblum-Photoroom.png-Photoroom.png","blacktank-Photoroom.png-Photoroom.png","greytank-Photoroom.png-Photoroom.png","blackcrop-Photoroom.png-Photoroom.png","TRANSP.png","tanktop.png", "Blackt-removebg-preview.png"];
    var pants = ["strip-Photoroom.png-Photoroom.png","rip-Photoroom.png-Photoroom.png","nikejog-Photoroom.png-Photoroom.png","brownbot-Photoroom.png-Photoroom.png","bluejob-Photoroom.png-Photoroom.png","blackjog-Photoroom.png-Photoroom.png","dickies.png", "wrangler.png"];
    var belts = ["nothing.png","belt-Photoroom.png-Photoroom.png"]; // Add your belt image filenames here
    var shoes = ["gianno.png","clak.png","burgundy-adrian-leather-tassel-loafers-Photoroom.png-Photoroom.png"];
@@ -237,6 +275,43 @@ button:hover {
         tshirtImg.classList.add('smaller-image');
     } else {
         tshirtImg.classList.remove('smaller-image'); // Remove the class if it's not the specific image
+    }
+
+     if (tshirts[tshirtIndex] === "blacktank-Photoroom.png-Photoroom.png") {
+        tshirtImg.classList.add('smaller-tank');
+    } else {
+        tshirtImg.classList.remove('smaller-tank'); // Remove the class if it's not the specific image
+    }
+
+     if (tshirts[tshirtIndex] === "blackcrop-Photoroom.png-Photoroom.png") {
+        tshirtImg.classList.add('smaller-crop');
+    } else {
+        tshirtImg.classList.remove('smaller-crop'); // Remove the class if it's not the specific image
+    }
+
+     if (tshirts[tshirtIndex] === "greytank-Photoroom.png-Photoroom.png") {
+        tshirtImg.classList.add('smaller-grey');
+    } else {
+        tshirtImg.classList.remove('smaller-grey'); // Remove the class if it's not the specific image
+    }
+
+
+    if (tshirts[tshirtIndex] === "greenblum-Photoroom.png-Photoroom.png") {
+        tshirtImg.classList.add('smaller-gg');
+    } else {
+        tshirtImg.classList.remove('smaller-gg'); // Remove the class if it's not the specific image
+    }
+
+     if (sweaters[sweaterIndex] === "turleblue-Photoroom.png-Photoroom.png") {
+        sweaterImg.classList.add('smaller-nav');
+    } else {
+        sweaterImg.classList.remove('smaller-nav'); // Remove the class if it's not the specific image
+    }
+
+    if (sweaters[sweaterIndex] === "cozyblack-Photoroom.png-Photoroom.png") {
+        sweaterImg.classList.add('smaller-co');
+    } else {
+        sweaterImg.classList.remove('smaller-co'); // Remove the class if it's not the specific image
     }
 
      if (shoes[shoesIndex] === "clak.png") {
